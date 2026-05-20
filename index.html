@@ -5,35 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fighter Simulator</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Share+Tech+Mono&display=swap');
+
     body {
       margin: 0;
-      overflow: hidden;
-      background: black;
+      background: #06000f;
       color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Share Tech Mono', monospace;
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
+      overflow: hidden;
     }
+
     .container {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, #cc00ff, #00ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 20px rgba(200,0,255,0.5));
+    }
+
     a {
-      color: cyan;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #cc00ff;
       text-decoration: none;
-      font-size: 1.25rem;
+      border: 2px solid #cc00ff;
+      padding: 12px 40px;
+      clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+      transition: all 0.2s;
     }
+
     a:hover {
-      text-decoration: underline;
+      background: rgba(204,0,255,0.15);
+      box-shadow: 0 0 30px rgba(204,0,255,0.5);
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Fighter Simulator</h1>
-    <p>Click below to launch the game.</p>
-    <a href="fighter_simulator.html">Play Fighter Simulator</a>
+    <h1>FIGHTER SIMULATOR</h1>
+    <p style="color:#664477;font-size:0.85rem;letter-spacing:0.1em">2-ROUND CHAMPIONSHIP · BEST OF 3</p>
+    <a href="fighter_simulator.html">FIGHT!</a>
   </div>
 </body>
 </html>
